@@ -4,7 +4,6 @@ venue: "NeurIPS 2025 Datasets and Benchmarks Track"
 year: 2025
 authors: "Tomasz Wroblewski, Amara Okafor, Ronald Miller"
 paperurl: "https://openreview.net/forum?id=reefsonar2025"
-codeurl: "https://github.com/komal74784391-netizen/emails-github-huggingface-terminal-filesystem-454-r7x2-site/tree/main/projects/reefsonar"
 citation: |-
   @inproceedings{wroblewski2025reef,
     title     = {Passive Acoustic Reef Health Monitoring with Contrastive Embeddings},
