@@ -1,0 +1,4 @@
+{% assign code_url = include.entry.codeurl %}
+{% if code_url and code_url != "" %}
+<a class="btn btn-outline-primary" href="{{ code_url }}" target="_blank" rel="noopener">Code</a>
+{% endif %}

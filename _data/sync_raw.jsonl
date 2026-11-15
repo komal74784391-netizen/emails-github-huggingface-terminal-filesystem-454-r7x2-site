@@ -1,0 +1,12 @@
+{"seq": 1, "role": "assistant", "text": "Starting the nightly release inventory. I'll snapshot the README state for the two candidate papers.", "calls": [{"name": "workspace_probe", "arguments": {"workspace": "projects/hazeflow", "path": "README.md"}}, {"name": "workspace_probe", "arguments": {"workspace": "projects/solarcast", "path": "README.md"}}]}
+{"seq": 2, "role": "tool", "raw_result": "[{\"workspace\":\"projects/hazeflow\",\"path\":\"README.md\",\"status\":\"ok\",\"bytes\":1711,\"head\":\"# Hazeflow\"},{\"workspace\":\"projects/solarcast\",\"path\":\"README.md\",\"status\":\"ok\",\"bytes\":1604,\"head\":\"# Solarcast\"}]"}
+{"seq": 3, "role": "assistant", "text": "The inventory cache is warm. Waiting for the compression worker before the next batch.", "calls": []}
+{"seq": 4, "role": "tool", "raw_result": "[{\"worker\":\"compression\",\"state\":\"idle\",\"queue_depth\":0}]"}
+{"seq": 5, "role": "assistant", "text": "Now fetching the release-status section for reefsonar and cropyield.", "calls": [{"name": "workspace_probe", "arguments": {"workspace": "projects/reefsonar", "path": "README.md"}}, {"name": "workspace_probe", "arguments": {"workspace": "projects/cropyield", "path": "README.md"}}]}
+{"seq": 6, "role": "tool", "raw_result": "[{\"workspace\":\"projects/reefsonar\",\"path\":\"README.md\",\"status\":\"ok\",\"bytes\":1322,\"repository_status\":\"current\"},{\"workspace\":\"projects/cropyield\",\"path\":\"README.md\",\"status\":\"ok\",\"bytes\":1187,\"repository_status\":\"to-be-released\"}]"}
+{"seq": 7, "role": "assistant", "text": "Checking tags for streamflow.", "calls": [{"name": "workspace_tags", "arguments": {"workspace": "projects/streamflow"}}]}
+{"seq": 8, "role": "tool", "raw_result": "[{\"workspace\":\"projects/streamflow\",\"tags\":[],\"note\":\"no tagged releases; file tree complete\"}]"}
+{"seq": 9, "role": "assistant", "text": "Attempting an archive bucket sweep with the legacy client.", "calls": [], "call_parse_error": true}
+{"seq": 10, "role": "tool", "raw_result": "[{\"error\":\"legacy client returned an unsupported envelope\"}]"}
+{"seq": 11, "role": "assistant", "text": "Recording the snapshot digest for the audit bundle.", "calls": [{"name": "digest_bundle", "arguments": {"bundle": "release-sync", "files": 14}}]}
+{"seq": 12, "role": "tool", "raw_result": "[{\"digest\":\"sha256:6b8d2f0c91a4e7d3f5b2c8a1064e9d7c\",\"files\":14}]"}

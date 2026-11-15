@@ -1,1 +1,9 @@
-# fieldnotes-site
+title: Field Notes
+description: Research group publications and code
+baseurl: ""
+url: ""
+markdown: kramdown
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/

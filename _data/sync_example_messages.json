@@ -1,0 +1,40 @@
+{
+  "run_id": "release-sync-20261106T0300Z",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Starting the sampler inventory for the two archived jobs.",
+      "tool_calls": [
+        {
+          "name": "workspace_probe",
+          "arguments": {
+            "workspace": "orbital-sampler",
+            "path": "README.md"
+          }
+        },
+        {
+          "name": "workspace_probe",
+          "arguments": {
+            "workspace": "coastal-sampler",
+            "path": "README.md"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[{\"workspace\":\"orbital-sampler\",\"status\":\"ok\",\"bytes\":1180},{\"workspace\":\"coastal-sampler\",\"status\":\"ok\",\"bytes\":967}]",
+      "tool_call_id": "tool_call_1"
+    },
+    {
+      "role": "assistant",
+      "content": "Waiting for the dedupe pass to finish.",
+      "tool_calls": []
+    },
+    {
+      "role": "assistant",
+      "content": "Retrying the legacy archive probe.",
+      "tool_calls": []
+    }
+  ]
+}

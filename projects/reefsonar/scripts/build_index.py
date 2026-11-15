@@ -1,0 +1,1 @@
+print('building embedding index')

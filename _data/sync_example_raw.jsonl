@@ -1,1 +1,6 @@
-Hello
+{"seq": 1, "role": "assistant", "text": "Starting the sampler inventory for the two archived jobs.", "calls": [{"name": "workspace_probe", "arguments": {"workspace": "orbital-sampler", "path": "README.md"}}, {"name": "workspace_probe", "arguments": {"workspace": "coastal-sampler", "path": "README.md"}}]}
+{"seq": 2, "role": "tool", "raw_result": "[{\"workspace\":\"orbital-sampler\",\"status\":\"ok\",\"bytes\":1180},{\"workspace\":\"coastal-sampler\",\"status\":\"ok\",\"bytes\":967}]"}
+{"seq": 3, "role": "assistant", "text": "Waiting for the dedupe pass to finish.", "calls": []}
+{"seq": 4, "role": "tool", "raw_result": "[{\"worker\":\"dedupe\",\"state\":\"idle\"}]"}
+{"seq": 5, "role": "assistant", "text": "Retrying the legacy archive probe.", "calls": [], "call_parse_error": true}
+{"seq": 6, "role": "tool", "raw_result": "[{\"error\":\"unsupported envelope\"}]"}

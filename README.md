@@ -1,2 +1,10 @@
-# emails-github-huggingface-terminal-filesystem-454-r7x2-site
-Field Notes lab website (Jekyll source)
+# Field Notes website
+
+Static site generated from the `_publications` collection. Publication entries
+use YAML front matter with `title`, `venue`, `year`, `authors`, `paperurl`,
+`citation` and an optional `codeurl`.
+
+The `projects/` folder contains the per-project release workspaces referenced by
+the publication entries. The release activity page is rendered from
+`_data/sync_messages.json`, which is regenerated from the raw assistant capture
+in `_data/sync_raw.jsonl`.
