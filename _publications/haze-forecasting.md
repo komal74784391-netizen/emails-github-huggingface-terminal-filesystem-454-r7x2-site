@@ -4,7 +4,6 @@ venue: "IEEE Transactions on Geoscience and Remote Sensing"
 year: 2026
 authors: "Ronald Miller, Priya Nadar, Tomasz Wroblewski"
 paperurl: "https://doi.org/10.1109/TGRS.2026.3312047"
-codeurl: "https://github.com/komal74784391-netizen/emails-github-huggingface-terminal-filesystem-454-r7x2-site/tree/main/projects/hazeflow"
 citation: |-
   @article{miller2026haze,
     title   = {Sparse-Sensor Haze Forecasting over Heterogeneous Terrain},

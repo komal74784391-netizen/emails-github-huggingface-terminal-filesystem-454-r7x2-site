@@ -4,7 +4,7 @@ venue: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining 2026"
 year: 2026
 authors: "Priya Nadar, Ronald Miller, Jonas Lindqvist"
 paperurl: "https://doi.org/10.1145/3721188.3721409"
-codeurl: "https://github.com/komal74784391-netizen/emails-github-huggingface-terminal-filesystem-454-r7x2-site/tree/main/projects/solarcast"
+codeurl: "https://github.com/atlas-mirrors/solarcast"
 citation: |-
   @inproceedings{nadar2026solar,
     title     = {Probabilistic Solar Irradiance Nowcasting with Conformal Ensembles},
